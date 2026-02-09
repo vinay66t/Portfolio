@@ -15,7 +15,7 @@ It showcases my profile, skills, and projects.
 - CSS
 
 ## 🔹 Live Demo
-(Add your GitHub Pages link here after deployment)
+ https://vinay66t.github.io/Portfolio/
 
 ## 🔹 Author
-Your Name
+Timmala Vinay
