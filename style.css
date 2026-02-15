@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background-color: #0b1d4d;
+    background: linear-gradient(135deg, #0b1d4d, #142f80);
     color: white;
     display: flex;
     flex-direction: column;
@@ -24,22 +24,25 @@ body {
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 48px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .hero p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 
 .hero-buttons {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 /* SECTIONS */
 .section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -48,7 +51,8 @@ body {
 }
 
 h2 {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    font-size: 28px;
 }
 
 /* CARDS */
@@ -56,20 +60,20 @@ h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
 }
 
 .card {
     background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    width: 260px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 14px;
+    width: 280px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .small-card {
@@ -108,39 +112,27 @@ h2 {
 }
 
 .card-buttons {
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
+/* FOOTER */
+footer {
+    background-color: #0b1d4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .card {
         width: 90%;
     }
 }
-html {
-    scroll-behavior: smooth;
-}
-* {
-    font-family: 'Poppins', sans-serif;
-}
-.section {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
