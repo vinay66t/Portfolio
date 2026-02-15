@@ -2,35 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Timmala Vinay | Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Timmala Vinay</h1>
-        <p>Frontend Developer</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a BTech CSD student passionate about web development.
-            I build responsive web applications using HTML, CSS, and JavaScript.
-        </p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Login & Signup App</h3>
-            <p>Multi-page authentication system using localStorage.</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Hi, I'm Timmala Vinay</h1>
+        <p>Frontend Developer | Computer Science Student</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
     </section>
 
-    <section>
-        <h2>Contact</h2>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Login & Signup System</h3>
+                <p>Multi-page authentication system with form validation and localStorage.</p>
+                <div class="card-buttons">
+                    <a href=" https://vinay66t.github.io/login-signup-system/" class="btn small">Live Demo</a>
+                    <a href="https://github.com/vinay66t/login-signup-system.git" class="btn small btn-outline">GitHub</a>
+                </div>
+            </div>
+            <div class="card"
+            <h3>Foodies Kitchen</h3>
+            <p>Online food ordering website built using HTML,CSS & JS.</p>
+            <div class="card-buttons">
+                <a href=" https://vinay66t.github.io/foodies-kitchen/" class="btn small">Live Demo</a>
+                <a href="https://github.com/vinay66t/foodies-kitchen" class="btn small btn-outline">Github</a>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal portfolio built using HTML and CSS.</p>
+                <div class="card-buttons">
+                    <a href="#" class="btn small">Live Demo</a>
+                    <a href="#" class="btn small btn-outline">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section light">
+        <h2>Services I Offer</h2>
+
+        <div class="card-container">
+            <div class="card small-card">
+                <h3>Static Websites</h3>
+            </div>
+
+            <div class="card small-card">
+                <h3>Landing Pages</h3>
+            </div>
+
+            <div class="card small-card">
+                <h3>Portfolio Websites</h3>
+            </div>
+
+            <div class="card small-card">
+                <h3>Responsive Design</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
         <p>Email: timmalavinay@gmail.com</p>
+        <p>GitHub: https://github.com/vinay66t</p>
     </section>
 
 </body>
